@@ -133,5 +133,9 @@ header img {
   float: left;
 }
 
-
+header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
