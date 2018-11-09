@@ -11,13 +11,10 @@
 
 class Response < ApplicationRecord
   
+  validates [:user_id, :answer_choice_id], uniqueness: true
   def sibling_responses
-    
+    question.responses.where.not(id: self.id)
   end
-  
-  has_one :question,
-    through: :answer_choice,
-    source: :question
   
   belongs_to :respondent,
     primary_key: :id,
@@ -28,4 +25,9 @@ class Response < ApplicationRecord
     primary_key: :id,
     foreign_key: :answer_choice_id,
     class_name: :AnswerChoice
+    
+  has_one :question,
+    through: :answer_choice,
+    source: :question
 end
+
