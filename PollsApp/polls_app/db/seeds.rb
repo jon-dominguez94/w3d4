@@ -72,3 +72,33 @@ a25 = AnswerChoice.create(choice: "CS Degree", question_id: q9.id)
 a26 = AnswerChoice.create(choice: "Some experience", question_id: q9.id)
 a27 = AnswerChoice.create(choice: "None", question_id: q9.id)
 
+Response.destroy_all
+
+Response.create(user_id: jon.id, answer_choice_id: a1.id)
+Response.create(user_id: jon.id, answer_choice_id: a4.id)
+Response.create(user_id: jon.id, answer_choice_id: a7.id)
+Response.create(user_id: jon.id, answer_choice_id: a10.id)
+Response.create(user_id: jon.id, answer_choice_id: a13.id)
+Response.create(user_id: jon.id, answer_choice_id: a16.id)
+Response.create(user_id: jon.id, answer_choice_id: a19.id)
+Response.create(user_id: jon.id, answer_choice_id: a22.id)
+Response.create(user_id: jon.id, answer_choice_id: a25.id)
+
+Response.create(user_id: jon2.id, answer_choice_id: a2.id)
+Response.create(user_id: jon2.id, answer_choice_id: a5.id)
+Response.create(user_id: jon2.id, answer_choice_id: a8.id)
+Response.create(user_id: jon2.id, answer_choice_id: a11.id)
+Response.create(user_id: jon2.id, answer_choice_id: a14.id)
+
+
+Response.create(user_id: daniel.id, answer_choice_id: a12.id)
+Response.create(user_id: daniel.id, answer_choice_id: a15.id)
+Response.create(user_id: daniel.id, answer_choice_id: a18.id)
+Response.create(user_id: daniel.id, answer_choice_id: a21.id)
+Response.create(user_id: daniel.id, answer_choice_id: a24.id)
+Response.create(user_id: daniel.id, answer_choice_id: a3.id)
+
+Response.create(user_id: ted.id, answer_choice_id: a4.id)
+Response.create(user_id: ted.id, answer_choice_id: a9.id)
+Response.create(user_id: ted.id, answer_choice_id: a13.id)
+
