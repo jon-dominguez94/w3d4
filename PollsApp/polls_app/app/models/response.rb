@@ -10,6 +10,8 @@
 #
 
 class Response < ApplicationRecord
+  
+  
   belongs_to :respondent,
     primary_key: :id,
     foreign_key: :user_id,
